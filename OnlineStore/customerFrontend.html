@@ -1,0 +1,37 @@
+
+<html>
+<head>
+<title> Web Store </title>
+		<script type="text/javascript"
+			src="formChecker.js">
+			
+		</script>
+</head>
+<body>
+	<p> Please log in below </p>
+	<form name = "loginForm" onsubmit="return validate1()" action = "customerBackend.php" method="POST">
+		
+		Username: <input type="text" name="username" id="user1" />
+		<br>
+		Password: <input type="password" name="pass1" id="passid" />
+		<br>
+		Things that you can buy:
+		<br>
+		1. Witcher 3
+		<input type="number" name="game" id="witcher" min="0" />
+		<br>
+		2. Metal Gear Solid: Phantom Pain
+		<input type="number" name="mgsgame" id="mgs" min="0"/>
+		<br>
+		3. Call of Duty: Black Ops 3
+		<input type="number" name="blopsgame" id="blops" min="0"/>
+		<br>
+		Shipping Types:<br>
+		<input type="radio" name="ship" value="free" id="f" />Free 7 day<br>
+		<input type="radio" name="ship" value="night" id="n" />$50.00 over night<br>
+		<input type="radio" name="ship" value="three" id="t" />$5.00 three day<br>
+		<input type="submit" value="Login" name="login"/>
+		<input type="submit" value="Reset" name="reset"/>
+	</form>
+</body>
+</html>
