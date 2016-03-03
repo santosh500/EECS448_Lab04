@@ -2,13 +2,17 @@
 <html>
 <head>
 <title> Web Store </title>
+		<link href="style.css"
+			rel="stylesheet"
+			type="text/css"/>
+		
 		<script type="text/javascript"
 			src="formChecker.js">
 			
 		</script>
 </head>
 <body>
-	<p> Please log in below </p>
+	<b> Welcome to the Video Game Store </b>
 	<form name = "loginForm" onsubmit="return validate1()" action = "customerBackend.php" method="POST">
 		
 		Username: <input type="text" name="username" id="user1" />
@@ -31,7 +35,7 @@
 		<input type="radio" name="ship" value="night" id="n" />$50.00 over night<br>
 		<input type="radio" name="ship" value="three" id="t" />$5.00 three day<br>
 		<input type="submit" value="Login" name="login"/>
-		<input type="submit" value="Reset" name="reset"/>
+		<input type="reset" value="Reset" name="reset"/>
 	</form>
 </body>
 </html>
